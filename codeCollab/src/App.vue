@@ -4,6 +4,7 @@ import AppHeader from './components/AppHeader.vue'
 import AppFooter from './components/AppFooter.vue'
 import TextEditor from './components/TextEditor.vue'
 import AssistantPanel from './components/AssistantPanel.vue'
+import ClickCounter from './components/ClickCounter.vue'
 
 const userName = ref('')
 </script>
@@ -14,6 +15,8 @@ const userName = ref('')
     <TextEditor class="app-editor" />
     <AssistantPanel class="app-assistant" />
     <AppFooter appName="Code Collab" :year="2026" class="app-footer" />
+    <ClickCounter :initial="0"/>
+    <ClickCounter :initial="100"/>
   </div>
 </template>
 
